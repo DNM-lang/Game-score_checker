@@ -64,7 +64,7 @@ fun main()
 
 // Level 1
 
-    lvlScore = 12 // insert simulated values for level score
+    lvlScore = 13 // insert simulated values for level score
 
     Player1.totalScore += lvlScore; // use the combined operator (+=) to add the lvlScore to totalScore
 
