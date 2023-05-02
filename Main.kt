@@ -66,11 +66,11 @@ fun main()
 
     lvlScore = 12 // insert simulated values for level score
 
-    P1.totalScore += lvlScore; // use the combined operator (+=) to add the lvlScore to totalScore
+    Player1.totalScore += lvlScore; // use the combined operator (+=) to add the lvlScore to totalScore
 
 // suppy the parameters for the checkBest function by accessing the Player properties
 
-    P1.personalBestScore = scoring.checkBest(Player1.personalBestScore,lvlScore);
+    Player1.personalBestScore = scoring.checkBest(Player1.personalBestScore,lvlScore);
 
 
 
@@ -106,7 +106,7 @@ fun main()
 
     lvlScore = 99 // insert simulated values for level score
 
-    P1.totalScore += lvlScore; // use the combined operator (+=) to add the lvlScore to totalScore
+    Player1.totalScore += lvlScore; // use the combined operator (+=) to add the lvlScore to totalScore
 
 // suppy the parameters for the checkBest function by accessing the Player properties
 
