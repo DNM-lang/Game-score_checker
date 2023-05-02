@@ -16,8 +16,7 @@ class Player(var name:String, var surName:String)
 
 }
 
-
-// full Scores class and checkBest function
+//full Scores class and checkBest function
 
 class Scores()
 
@@ -51,9 +50,9 @@ fun main()
 
     // initalise Player objects
 
-    val P1 = Player("Nicola", "Tesla")
+    val Player1 = Player("Nicola", "Tesla")
 
-    val P2 = Player("Thomas", " Edison " )
+    val Player2 = Player("Thomas", " Edison " )
 
 // create working variables
 
@@ -71,35 +70,35 @@ fun main()
 
 // suppy the parameters for the checkBest function by accessing the Player properties
 
-    P1.personalBestScore = scoring.checkBest(P1.personalBestScore,lvlScore);
+    P1.personalBestScore = scoring.checkBest(Player1.personalBestScore,lvlScore);
 
 
 
     lvlScore = 34
 
-    P2.totalScore += lvlScore;
+    Player2.totalScore += lvlScore;
 
-    P2.personalBestScore = scoring. checkBest(P2.personalBestScore,lvlScore);
+    Player2.personalBestScore = scoring. checkBest(Player2.personalBestScore,lvlScore);
 
 
 
 // Level 2
 
-    lvlScore = 56 // insert simulated values for level score
+    lvlScore = 60 // insert simulated values for level score
 
-    P1.totalScore += lvlScore; // use the combined operator (+=) to add the lvlScore to totalScore
+    Player1.totalScore += lvlScore; // use the combined operator (+=) to add the lvlScore to totalScore
 
 // suppy the parameters for the checkBest function by accessing the Player properties
 
-    P1.personalBestScore = scoring.checkBest(P1.personalBestScore,lvlScore);
+    Player1.personalBestScore = scoring.checkBest(Player1.personalBestScore,lvlScore);
 
 
 
-    lvlScore = 78 // insert simulated values for level score
+    lvlScore = 88 // insert simulated values for level score
 
-    P2.totalScore += lvlScore;
+    Player2.totalScore += lvlScore;
 
-    P2.personalBestScore = scoring. checkBest(P2.personalBestScore,lvlScore);
+    Player2.personalBestScore = scoring. checkBest(Player2.personalBestScore,lvlScore);
 
 
 
@@ -111,29 +110,29 @@ fun main()
 
 // suppy the parameters for the checkBest function by accessing the Player properties
 
-    P1.personalBestScore = scoring.checkBest(P1.personalBestScore,lvlScore);
+    Player1.personalBestScore = scoring.checkBest(Player1.personalBestScore,lvlScore);
 
 
 
     lvlScore = 10
 
-    P2.totalScore += lvlScore;
+    Player2.totalScore += lvlScore;
 
-    P2.personalBestScore = scoring.checkBest(P2.personalBestScore,lvlScore);
+    Player2.personalBestScore = scoring.checkBest(Player2.personalBestScore,lvlScore);
 
 
 
 // conditional check using an if statement to determine the winner
 
-    if(P1.totalScore > P2.totalScore)
+    if(Player1.totalScore > Player2.totalScore)
 
     {
 
 // access the Player properties to construct the String to print
 
-        println("The winner is "+ P1.fullName() +  " with a Score of  "+P1.totalScore);
+        println("The winner is "+ Player1.fullName() +  " with a Score of  "+Player1.totalScore);
 
-        println("Personal Best Score is = " +P1.personalBestScore);
+        println("Personal Best Score is = " +Player1.personalBestScore);
 
     }
 
@@ -141,9 +140,9 @@ fun main()
 
     {
 
-        println("The winner is "+ P2.fullName() + " with a Score of "+P2.totalScore);
+        println("The winner is "+ Player2.fullName() + " with a Score of "+Player2.totalScore);
 
-        println("Personal Best Score is = " +P2.personalBestScore);
+        println("Personal Best Score is = " +Player2.personalBestScore);
 
     }
 
